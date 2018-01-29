@@ -1,3 +1,6 @@
+0.3.2
+
+1. fix error on image upload - to prevent page reload
 
 0.3.1
 

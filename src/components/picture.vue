@@ -71,6 +71,8 @@
         }
       },
       certainHandler (event) {
+        event.preventDefault()
+        event.stopPropagation()
         let obj = this.$refs.file
         let form = this.$refs.form
         let uploadUrl = this.uploadUrl
