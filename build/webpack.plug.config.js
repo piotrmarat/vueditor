@@ -12,13 +12,17 @@ module.exports = {
 
   watch: true,
 
-  entry: '../src/plugins/emoji.vue',
+  entry: {
+    emoji: '../src/plugins/emoji.vue',
+    asset: '../src/plugins/asset.vue',
+    youtube: '../src/plugins/youtube.vue'
+  },
 
   output: {
     publicPath: '/',
     path: path.join(__dirname, '../dist'),
-    filename: 'plugins/emoji.min.js',
-    library: 'emoji',
+    filename: 'plugins/[name].min.js',
+    library: '[name]',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
