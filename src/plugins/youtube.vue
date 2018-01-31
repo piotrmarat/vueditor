@@ -72,7 +72,7 @@
       },
       certainHandler (event) {
         let video_id = this.link.split('/').pop()
-        this.link = `http://www.youtube.com/embed/${video_id}`
+        this.link = `https://www.youtube.com/embed/${video_id}`
         event.preventDefault()
         event.stopPropagation()
         let obj = this.$refs.file
